@@ -32,7 +32,12 @@ dnf5 -y install ubuntumono-nerd-fonts      \
 
 # Yeet sway and replace it with Swayfx
 # Note: You might have stuttering issues if you use this in a virtual machine
+# Requires Terra repo
 dnf5 swap -y sway swayfx --allowerasing --setopt=protected_packages=
+
+# Install awww, wallpaper daemon
+# Requires Terra repo
+dnf5 install -y awww
 
 # Install VSCodium
 # Note: .repo is already defined in the image
