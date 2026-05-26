@@ -18,6 +18,7 @@ dnf5 install -y --nogpgcheck --repofrompath 'terra,https://repos.fyralabs.com/te
 dnf5 swap -y sway swayfx --allowerasing --setopt=protected_packages=
 
 # Install VSCodium
+# Note: .repo is already defined in the image
 dnf5 install -y codium
 
 # Install Rust to build Wayle
