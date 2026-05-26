@@ -16,6 +16,20 @@ dnf5 -y copr disable mboaisha/assortment
 # Add Terra repo
 dnf5 install -y --nogpgcheck --repofrompath 'terra,https://repos.fyralabs.com/terra$releasever' terra-release
 
+# A whole slew of fonts
+dnf5 -y install ubuntumono-nerd-fonts      \
+                iosevka-nerd-fonts         \
+                lilex-nerd-fonts           \
+                iosevkaterm-nerd-fonts     \
+                iosevkatermslab-nerd-fonts \
+                inconsolata-nerd-fonts     \
+                hack-nerd-fonts            \
+                firamono-nerd-fonts        \
+                liberationmono-nerd-fonts  \
+                zedmono-nerd-fonts         \
+                sourcecodepro-nerd-fonts   \
+                terminus-nerd-fonts
+
 # Yeet sway and replace it with Swayfx
 # Note: You might have stuttering issues if you use this in a virtual machine
 dnf5 swap -y sway swayfx --allowerasing --setopt=protected_packages=
