@@ -5,6 +5,9 @@ set -ouex pipefail
 # Install packages from Fedora repositories
 dnf5 install -y tmux neovim curl wget wlogout fuzzel fastfetch
 
+# Package group to install virtualization goodies such as virt-manager
+sudo dnf install @virtualization
+
 # Add my personal COPR and install lavat
 dnf5 -y copr enable mboaisha/assortment
 dnf5 -y install lavat
@@ -21,6 +24,9 @@ dnf5 swap -y sway swayfx --allowerasing --setopt=protected_packages=
 # Note: .repo is already defined in the image
 dnf5 install -y codium
 
+#############################
+# There is probably a cleaner way of doing this...
+#############################
 # Install Rust to build Wayle
 #dnf5 install -y rust cargo
 
@@ -35,6 +41,7 @@ dnf5 install -y codium
 #cd wayle
 #cargo install --root /usr --path wayle
 #cargo install --root /usr --path crates/wayle-settings
+###############################
 
 systemctl enable podman.socket
 
