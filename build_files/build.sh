@@ -6,7 +6,7 @@ set -ouex pipefail
 dnf5 install -y tmux neovim curl wget wlogout fuzzel fastfetch
 
 # Package group to install virtualization goodies such as virt-manager
-sudo dnf install @virtualization
+sudo dnf install -y @virtualization
 
 # Add my personal COPR and install lavat
 dnf5 -y copr enable mboaisha/assortment
