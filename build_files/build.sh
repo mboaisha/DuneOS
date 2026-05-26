@@ -20,7 +20,7 @@ dnf5 swap -y sway swayfx --allowerasing --setopt=protected_packages=
 dnf5 install -y rust cargo
 
 # Deps for building Wayle
-sudo dnf install git cmake pkgconf-pkg-config gtk4-devel gtk4-layer-shell-devel \
+dnf5 -y install git cmake pkgconf-pkg-config gtk4-devel gtk4-layer-shell-devel \
   gtksourceview5-devel pulseaudio-libs-devel fftw-devel pipewire-devel \
   systemd-devel clang gcc libxkbcommon-devel
 
