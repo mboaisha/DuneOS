@@ -25,10 +25,11 @@ dnf5 -y install git cmake pkgconf-pkg-config gtk4-devel gtk4-layer-shell-devel \
   systemd-devel clang gcc libxkbcommon-devel
 
 # Build Wayle
+export CARGO_HOME=/var/tmp/cargo
 git clone https://github.com/wayle-rs/wayle
 cd wayle
-cargo install --path wayle
-cargo install --path crates/wayle-settings
+cargo install --root /usr --path wayle
+cargo install --root /usr --path crates/wayle-settings
 
 systemctl enable podman.socket
 
