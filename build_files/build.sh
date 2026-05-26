@@ -41,7 +41,7 @@ dnf5 install -y codium
 # Add flathub
 flatpak remote-add --if-not-exists flathub https://dl.flathub.org/repo/flathub.flatpakrepo
 # Install Bazaar
-flatpak install flathub io.github.kolunmi.Bazaar
+flatpak install --noninteractive flathub io.github.kolunmi.Bazaar
 
 #############################
 # There is probably a cleaner way of doing this...
