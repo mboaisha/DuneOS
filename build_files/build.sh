@@ -13,6 +13,9 @@ dnf5 -y copr disable mboaisha/assortment
 dnf5 install -y --nogpgcheck --repofrompath 'terra,https://repos.fyralabs.com/terra$releasever' terra-release
 
 # Yeet sway and replace it with Swayfx
+# Note: You might have stuttering issues if you use this in a virtual machine
 dnf5 swap -y sway swayfx --allowerasing --setopt=protected_packages=
+
+
 
 systemctl enable podman.socket
