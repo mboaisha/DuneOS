@@ -17,6 +17,8 @@ dnf5 install -y --nogpgcheck --repofrompath 'terra,https://repos.fyralabs.com/te
 dnf5 swap -y sway swayfx --allowerasing --setopt=protected_packages=
 
 # Install Rust to build Wayle
-curl --proto '=https' --tlsv1.2 -sSf https://sh.rustup.rs | sh -s -- -y
+dnf5 install -y rust cargo
 
 systemctl enable podman.socket
+
+dnf5 clean all
