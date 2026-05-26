@@ -24,7 +24,7 @@ dnf5 -y install git cmake pkgconf-pkg-config gtk4-devel gtk4-layer-shell-devel \
   gtksourceview5-devel pulseaudio-libs-devel fftw-devel pipewire-devel \
   systemd-devel clang gcc libxkbcommon-devel
 
-# Build Wayle
+# Build and install Wayle
 export CARGO_HOME=/var/tmp/cargo
 git clone https://github.com/wayle-rs/wayle
 cd wayle
