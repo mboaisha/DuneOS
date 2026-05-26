@@ -10,8 +10,9 @@ dnf5 -y install lavat
 dnf5 -y copr disable mboaisha/assortment
 
 # Add Terra repo
-dnf install --nogpgcheck --repofrompath 'terra,https://repos.fyralabs.com/terra$releasever' terra-release
+dnf5 install -y --nogpgcheck --repofrompath 'terra,https://repos.fyralabs.com/terra$releasever' terra-release
+
 # Yeet sway and replace it with Swayfx
-sudo dnf swap sway swayfx --allowerasing --setopt=protected_packages=
+dnf5 swap -y sway swayfx --allowerasing --setopt=protected_packages=
 
 systemctl enable podman.socket
