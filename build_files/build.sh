@@ -3,7 +3,7 @@
 set -ouex pipefail
 
 # Install packages from Fedora repositories
-dnf5 install -y tmux neovim curl
+dnf5 install -y tmux neovim curl wget wlogout fuzzel 
 
 dnf5 -y copr enable mboaisha/assortment
 dnf5 -y install lavat
