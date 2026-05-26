@@ -17,6 +17,9 @@ dnf5 install -y --nogpgcheck --repofrompath 'terra,https://repos.fyralabs.com/te
 # Note: You might have stuttering issues if you use this in a virtual machine
 dnf5 swap -y sway swayfx --allowerasing --setopt=protected_packages=
 
+# Install VSCodium
+dnf5 install -y codium
+
 # Install Rust to build Wayle
 #dnf5 install -y rust cargo
 
