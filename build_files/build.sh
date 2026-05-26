@@ -38,6 +38,11 @@ dnf5 swap -y sway swayfx --allowerasing --setopt=protected_packages=
 # Note: .repo is already defined in the image
 dnf5 install -y codium
 
+# Add flathub
+flatpak remote-add --if-not-exists flathub https://dl.flathub.org/repo/flathub.flatpakrepo
+# Install Bazaar
+flatpak install flathub io.github.kolunmi.Bazaar
+
 #############################
 # There is probably a cleaner way of doing this...
 #############################
