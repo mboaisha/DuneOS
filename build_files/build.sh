@@ -79,6 +79,5 @@ systemctl enable podman.socket
 systemctl enable libvirtd.service
 systemctl enable libvirtd-ro.socket
 systemctl --global enable awww-daemon.service
-systemctl enable flatpak-preinstall.service
 
 dnf5 clean all
