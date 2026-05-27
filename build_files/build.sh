@@ -3,7 +3,7 @@
 set -ouex pipefail
 
 # Install packages from Fedora repositories
-dnf5 install -y tmux neovim curl wget wlogout fuzzel fastfetch
+dnf5 install -y tmux neovim curl wget wlogout fuzzel fastfetch chezmoi
 
 # Package group to install virtualization goodies such as virt-manager
 sudo dnf install -y @virtualization
