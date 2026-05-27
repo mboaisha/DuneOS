@@ -52,7 +52,7 @@ dnf5 install -y codium
 # This does not seem to be correct... They won't install
 #############################
 # Add flathub
-#flatpak remote-add --if-not-exists flathub https://dl.flathub.org/repo/flathub.flatpakrepo
+flatpak remote-add --if-not-exists flathub https://dl.flathub.org/repo/flathub.flatpakrepo
 # Install Bazaar
 #flatpak install --noninteractive flathub io.github.kolunmi.Bazaar
 
@@ -79,5 +79,6 @@ systemctl enable podman.socket
 systemctl enable libvirtd.service
 systemctl enable libvirtd-ro.socket
 systemctl --global enable awww-daemon.service
+systemctl enable flatpak-preinstall.service
 
 dnf5 clean all
