@@ -39,6 +39,10 @@ dnf5 swap -y sway swayfx --allowerasing --setopt=protected_packages=
 # Requires Terra repo
 dnf5 install -y awww
 
+# Install waypaper, GUI for wallpaper setting and such
+# Requires Terra repo
+dnf5 install -y waypaper
+
 # Install VSCodium
 # Note: .repo is already defined in the image
 dnf5 install -y codium
@@ -68,5 +72,8 @@ flatpak install --noninteractive flathub io.github.kolunmi.Bazaar
 ###############################
 
 systemctl enable podman.socket
+systemctl enable libvirtd.service
+systemctl enable libvirtd-ro.socket
+systemctl --global enable awww-daemon.service
 
 dnf5 clean all
