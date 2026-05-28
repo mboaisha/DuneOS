@@ -16,6 +16,13 @@ dnf5 -y copr disable mboaisha/assortment
 # Add Terra repo
 dnf5 install -y --nogpgcheck --repofrompath 'terra,https://repos.fyralabs.com/terra$releasever' terra-release
 
+# Noctalia shell
+# Requires Terra repo
+dnf5 install -y noctalia-shell
+
+# ghostty terminal emulator
+# Requires Terra repo
+dnf5 install -y ghostty
 # A whole slew of fonts
 dnf5 -y install ubuntumono-nerd-fonts      \
                 iosevka-nerd-fonts         \
@@ -38,11 +45,11 @@ dnf5 swap -y sway swayfx --allowerasing --setopt=protected_packages=
 
 # Install awww, wallpaper daemon
 # Requires Terra repo
-dnf5 install -y awww
+#dnf5 install -y awww
 
 # Install waypaper, GUI for wallpaper setting and such
 # Requires Terra repo
-dnf5 install -y waypaper
+#dnf5 install -y waypaper
 
 # Install VSCodium
 # Note: .repo is already defined in the image
@@ -79,6 +86,6 @@ flatpak preinstall
 systemctl enable podman.socket
 systemctl enable libvirtd.service
 systemctl enable libvirtd-ro.socket
-systemctl --global enable awww-daemon.service
+#systemctl --global enable awww-daemon.service
 
 dnf5 clean all
