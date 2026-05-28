@@ -1,53 +1,86 @@
-[Flatpak Preinstall io.podman_desktop.PodmanDesktop]
-IsRuntime=false
-
-[Flatpak Preinstall me.iepure.devtoolbox]
-IsRuntime=false
-
-[Flatpak Preinstall com.ranfdev.DistroShelf]
-IsRuntime=false
-
-[Flatpak Preinstall org.remmina.Remmina]
-IsRuntime=false
-
-[Flatpak Preinstall dev.vencord.Vesktop]
-IsRuntime=false
-
-[Flatpak Preinstall com.sublimehq.SublimeText]
-IsRuntime=false
-
-[Flatpak Preinstall com.spotify.Client]
-IsRuntime=false
+[Flatpak Preinstall com.bitwarden.desktop]
+Branch=stable
 
 [Flatpak Preinstall com.dropbox.Client]
-IsRuntime=false
-
-[Flatpak Preinstall com.bitwarden.desktop]
-IsRuntime=false
-
-[Flatpak Preinstall com.github.xournalpp.xournalpp]
-IsRuntime=false
-
-[Flatpak Preinstall com.google.EarthPro]
-IsRuntime=false
-
-[Flatpak Preinstall md.obsidian.Obsidian]
-IsRuntime=false
-
-[Flatpak Preinstall it.mijorus.gearlever]
-IsRuntime=false
+Branch=stable
 
 [Flatpak Preinstall com.github.tchx84.Flatseal]
-IsRuntime=false
+Branch=stable
 
-[Flatpak Preinstall org.videolan.VLC]
-IsRuntime=false
+[Flatpak Preinstall com.github.xournalpp.xournalpp]
+Branch=stable
 
-[Flatpak Preinstall org.localsend.localsend_app]
-IsRuntime=false
+[Flatpak Preinstall com.google.EarthPro]
+Branch=stable
+
+[Flatpak Preinstall com.moonlight_stream.Moonlight]
+Branch=stable
+
+[Flatpak Preinstall com.ranfdev.DistroShelf]
+Branch=stable
+
+[Flatpak Preinstall com.spotify.Client]
+Branch=stable
+
+[Flatpak Preinstall com.usebottles.bottles]
+Branch=stable
+
+[Flatpak Preinstall dev.vencord.Vesktop]
+Branch=stable
+
+[Flatpak Preinstall fun.dragonfly.switchfin]
+Branch=stable
+
+[Flatpak Preinstall io.github.dweymouth.supersonic]
+Branch=stable
+
+[Flatpak Preinstall io.github.flattool.Ignition]
+Branch=stable
+
+[Flatpak Preinstall io.github.flattool.Warehouse]
+Branch=stable
+
+[Flatpak Preinstall io.github.kolunmi.Bazaar]
+Branch=stable
+
+[Flatpak Preinstall io.github.rafaelfassi.QLogExplorer]
+Branch=stable
+
+[Flatpak Preinstall io.missioncenter.MissionCenter]
+Branch=stable
+
+[Flatpak Preinstall io.podman_desktop.PodmanDesktop]
+Branch=stable
+
+[Flatpak Preinstall it.mijorus.gearlever]
+Branch=stable
+
+[Flatpak Preinstall md.obsidian.Obsidian]
+Branch=stable
+
+[Flatpak Preinstall me.iepure.devtoolbox]
+Branch=stable
 
 [Flatpak Preinstall org.chromium.Chromium]
-IsRuntime=false
+Branch=stable
 
-[Flatpak Preinstall org.chromium.Chromium.Codecs]
-IsRuntime=true
+[Flatpak Preinstall org.gnome.NautilusPreviewer]
+Branch=stable
+
+[Flatpak Preinstall org.localsend.localsend_app]
+Branch=stable
+
+[Flatpak Preinstall org.mozilla.firefox]
+Branch=stable
+
+[Flatpak Preinstall org.remmina.Remmina]
+Branch=stable
+
+[Flatpak Preinstall org.sqlitebrowser.sqlitebrowser]
+Branch=stable
+
+[Flatpak Preinstall org.squidowl.halloy]
+Branch=stable
+
+[Flatpak Preinstall org.telegram.desktop]
+Branch=stable
