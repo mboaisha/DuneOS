@@ -6,7 +6,7 @@ ConditionPathExistsGlob=/usr/share/flatpak/preinstall.d/*.preinstall
 
 [Service]
 Type=oneshot
-ExecStart=/usr/bin/flatpak preinstall --system -y --noninteractive
+ExecStart=/usr/bin/dbus-run-session /usr/bin/flatpak preinstall --system -y --noninteractive
 RemainAfterExit=yes
 TimeoutStartSec=30min
 
