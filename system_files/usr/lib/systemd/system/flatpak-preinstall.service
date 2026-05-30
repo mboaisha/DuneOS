@@ -2,7 +2,7 @@
 Description=Install vendor-default flatpaks
 Wants=network-online.target
 After=network-online.target
-ConditionPathExistsGlob=/usr/share/flatpak/preinstall.d/*.preinstall
+ConditionPathExistsGlob=/etc/flatpak/preinstall.d/*.preinstall
 
 [Service]
 Type=oneshot
