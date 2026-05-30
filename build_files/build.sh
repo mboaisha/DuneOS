@@ -3,8 +3,20 @@
 set -ouex pipefail
 
 # Install packages from Fedora repositories
-dnf5 install -y tmux neovim curl wget wlogout fuzzel fastfetch chezmoi neo distrobox xwayland-satellite xorg-x11-server-Xwayland bat nemo
-
+dnf5 -y install tmux                     \
+                neovim                   \
+                curl                     \
+                wget                     \
+                wlogout                  \
+                fuzzel                   \
+                fastfetch                \
+                chezmoi                  \
+                neo                      \
+                distrobox                \
+                xwayland-satellite       \
+                xorg-x11-server-Xwayland \
+                bat                      \
+                nemo
 # Package group to install virtualization goodies such as virt-manager
 sudo dnf install -y @virtualization
 
