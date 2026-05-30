@@ -16,7 +16,8 @@ dnf5 -y install tmux                     \
                 xwayland-satellite       \
                 xorg-x11-server-Xwayland \
                 bat                      \
-                nemo
+                nemo                     \
+                alacritty
 # Package group to install virtualization goodies such as virt-manager
 sudo dnf install -y @virtualization
 
