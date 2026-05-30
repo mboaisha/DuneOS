@@ -57,9 +57,9 @@ dnf5 -y install ubuntumono-nerd-fonts      \
 dnf5 swap -y sway swayfx --allowerasing --setopt=protected_packages=
 
 # Change to the default upstream config
-dnf5 swap -y sway-config sway-config-upstream --allowerasing
+##dnf5 swap -y sway-config sway-config-upstream --allowerasing
 # Get rid of deadweight
-dnf5 remove -y wmenu sway-wallpapers
+##dnf5 remove -y wmenu sway-wallpapers
 
 # Install awww, wallpaper daemon
 # Requires Terra repo
