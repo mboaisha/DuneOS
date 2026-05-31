@@ -75,6 +75,7 @@ dnf5 swap -y sway swayfx --allowerasing --setopt=protected_packages=
 # Note: .repo is already defined in the image
 dnf5 install -y codium
 
+dnf5 install -y tailscale
 #############################
 # This does not seem to be correct... They won't install
 #############################
@@ -108,6 +109,7 @@ systemctl enable libvirtd.service
 systemctl enable libvirtd-ro.socket
 systemctl enable flatpak-preinstall.service
 systemctl enable sshd.service
+systemctl enable tailscaled.service
 #systemctl --global enable awww-daemon.service
 
 dnf5 clean all
