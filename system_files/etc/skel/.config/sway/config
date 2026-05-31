@@ -2,9 +2,18 @@
 ## Logo key, Mod1 is Alt. Mod4 is win key
 set $mod Mod4
 ## Terminal emulator
-set $term ghostty
-set $menu qs -c noctalia-shell call launcher toggle
+set $term alacritty
+## Launcher (bare command; exec is prepended at the bind site)
+set $menu qs -c noctalia-shell ipc call launcher toggle
+## File manager (bare command; exec is prepended at the bind site)
 set $fm nemo
+
+# Autostarts
+## session stuff
+exec /usr/libexec/sway-systemd/session.sh
+## Noctalia Shell
+exec qs -c noctalia-shell
+
 # Binds
 ## Bring up the launcher
 bindsym $mod+space exec $menu
@@ -43,12 +52,44 @@ bindsym $mod+Shift+6 move container to workspace 6
 bindsym $mod+Shift+7 move container to workspace 7
 bindsym $mod+Shift+8 move container to workspace 8
 bindsym $mod+Shift+9 move container to workspace 9
-### Make focused window fullscreen
+### Switch between active workspaces
+bindsym $mod+u workspace prev
+bindsym $mod+i workspace next
+## Make focused window fullscreen
 bindsym $mod+f fullscreen
 ## Lock the screen
-bindsym $mod+Alt+l qs -c noctalia-shell call lockscreen lock
+bindsym $mod+Alt+l exec qs -c noctalia-shell ipc call lockscreen lock
 ## Browse wallpapers
-bindsym $mod+y qs -c noctalia-shell call wallpaper toggle
+bindsym $mod+y exec qs -c noctalia-shell ipc call wallpaper toggle
 ## Open file manager
-bindsym $mod+e $fm
+bindsym $mod+e exec $fm
+## Reload Sway
+bindsym $mod+Shift+c reload
+## Resize windows
+### Define the mode
+mode "resize" {
+    bindsym h resize shrink width 5px
+    bindsym j resize grow height 5px
+    bindsym k resize shrink height 5px
+    bindsym l resize grow width 5px
+    bindsym Return mode "default"
+    bindsym Escape mode "default"
+}
+### Bind the mode
+bindsym $mod+r mode "resize"
 
+# Look and Feel
+## gaps
+gaps inner 4
+smart_gaps on
+## Borders
+default_border pixel 2
+smart_borders on
+## Blur
+blur enable
+blur_passes 2
+blur_radius 5
+## Shadows
+shadows enable
+shadow_blur_radius 20
+shadow_color #00000080
