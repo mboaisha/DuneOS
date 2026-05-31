@@ -37,7 +37,7 @@ dnf5 install -y noctalia-shell
 
 # ghostty terminal emulator
 # Requires Terra repo
-dnf5 install -y ghostty
+#dnf5 install -y ghostty
 # A whole slew of fonts
 dnf5 -y install ubuntumono-nerd-fonts      \
                 iosevka-nerd-fonts         \
