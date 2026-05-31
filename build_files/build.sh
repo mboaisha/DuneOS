@@ -2,7 +2,7 @@
 
 set -ouex pipefail
 
-dnf5 swap sway-config sway-config-minimal
+dnf5 -y swap sway-config sway-config-minimal
 
 # Install packages from Fedora repositories
 dnf5 -y install tmux                     \
