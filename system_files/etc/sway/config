@@ -58,7 +58,7 @@ bindsym $mod+i workspace next
 ## Make focused window fullscreen
 bindsym $mod+f fullscreen
 ## Lock the screen
-bindsym $mod+Alt+l exec qs -c noctalia-shell ipc call lockscreen lock
+bindsym $mod+Alt+l exec qs -c noctalia-shell ipc call lockScreen lock
 ## Browse wallpapers
 bindsym $mod+y exec qs -c noctalia-shell ipc call wallpaper toggle
 ## Open file manager
