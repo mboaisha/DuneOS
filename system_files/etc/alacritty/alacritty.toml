@@ -1,0 +1,17 @@
+# Font settings
+[font]
+size = 16
+normal = { family = "ZedMono Nerd Font"}
+
+# Window settings
+[window]
+opacity = 1
+dynamic_title = true
+dynamic_padding = true
+
+[general]
+# Themes import                                   
+## Pick and Choose
+import = [
+  "/etc/alacritty/themes/vivendi-modus.toml"
+]
