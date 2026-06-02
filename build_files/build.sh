@@ -20,7 +20,8 @@ dnf5 -y install tmux                     \
                 bat                      \
                 nemo                     \
                 alacritty                \
-                kitty
+                kitty                    \
+                wlsunset
 
 # Package group to install virtualization goodies such as virt-manager
 sudo dnf install -y @virtualization
