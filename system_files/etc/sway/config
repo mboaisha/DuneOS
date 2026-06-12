@@ -2,7 +2,7 @@
 ## Logo key, Mod1 is Alt. Mod4 is win key
 set $mod Mod4
 ## Terminal emulator
-set $term alacritty
+set $term kitty
 ## Launcher (bare command; exec is prepended at the bind site)
 set $menu qs -c noctalia-shell ipc call launcher toggle
 ## File manager (bare command; exec is prepended at the bind site)
