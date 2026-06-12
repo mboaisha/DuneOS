@@ -22,7 +22,8 @@ dnf5 -y install tmux                     \
                 alacritty                \
                 kitty                    \
                 wlsunset                 \
-                cargo
+                cargo                    \
+                tldr
 
 # Package group to install virtualization goodies such as virt-manager
 sudo dnf install -y @virtualization
