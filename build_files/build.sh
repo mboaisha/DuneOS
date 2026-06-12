@@ -62,6 +62,10 @@ dnf5 -y install ubuntumono-nerd-fonts      \
 # Requires Terra repo
 dnf5 swap -y sway swayfx --allowerasing --setopt=protected_packages=
 
+# Bitwarden CLI
+# Requires Terra repo
+dnf5 -y install bitwarden-cli
+
 # Change to the default upstream config
 ##dnf5 swap -y sway-config sway-config-upstream --allowerasing
 # Get rid of deadweight
