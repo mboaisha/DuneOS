@@ -39,7 +39,7 @@ dnf5 install -y --nogpgcheck --repofrompath 'terra,https://repos.fyralabs.com/te
 
 # Noctalia shell
 # Requires Terra repo
-dnf5 install -y noctalia-shell
+#dnf5 install -y noctalia-shell
 
 # ghostty terminal emulator
 # Requires Terra repo
