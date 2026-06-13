@@ -4,20 +4,20 @@ set $mod Mod4
 ## Terminal emulator
 set $term kitty
 ## Launcher (bare command; exec is prepended at the bind site)
-set $menu qs -c noctalia-shell ipc call launcher toggle
+set $menu dms ipc call spotlight toggle
 ## File manager (bare command; exec is prepended at the bind site)
 set $fm nemo
 
 # Autostarts
 ## session stuff
 exec /usr/libexec/sway-systemd/session.sh
-## Noctalia Shell
-exec qs -c noctalia-shell
+## Dank Material Shell
+exec dms run
 
 # Binds
 ## Bring up the launcher
 bindsym $mod+space exec $menu
-## Spawn terminal
+## Spawn $term
 bindsym $mod+t exec $term
 ## Close focused window
 bindsym $mod+q kill
@@ -58,9 +58,9 @@ bindsym $mod+i workspace next
 ## Make focused window fullscreen
 bindsym $mod+f fullscreen
 ## Lock the screen
-bindsym $mod+Alt+l exec qs -c noctalia-shell ipc call lockScreen lock
+bindsym $mod+Alt+l exec dms ipc call lock lock
 ## Browse wallpapers
-bindsym $mod+y exec qs -c noctalia-shell ipc call wallpaper toggle
+bindsym $mod+y exec dms ipc dankdash wallpaper
 ## Open file manager
 bindsym $mod+e exec $fm
 ## Reload Sway
@@ -98,4 +98,3 @@ blur_saturation 2
 shadows on
 shadow_blur_radius 20
 shadow_color #00000080
-
