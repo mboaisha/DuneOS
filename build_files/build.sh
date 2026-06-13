@@ -126,6 +126,9 @@ systemctl enable libvirtd-ro.socket
 systemctl enable flatpak-preinstall.service
 systemctl enable sshd.service
 systemctl enable tailscaled.service
+systemctl disable sddm
+systemctl enable greetd
+
 #systemctl --global enable awww-daemon.service
 
 dnf5 clean all
