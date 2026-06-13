@@ -86,8 +86,8 @@ smart_gaps on
 default_border pixel 2
 smart_borders on
 ## Blur
-blur on
-blur_xray off
+blur enable
+blur_xray enable
 blur_passes 1
 blur_radius 3
 blur_noise 0
@@ -95,6 +95,6 @@ blur_brightness 0.75
 blur_contrast 0.5
 blur_saturation 2
 ## Shadows
-shadows on
+shadows enable
 shadow_blur_radius 20
 shadow_color #00000080
