@@ -80,20 +80,15 @@ bindsym $mod+r mode "resize"
 
 # Look and Feel
 ## gaps
-gaps inner 4
+gaps inner 2
 smart_gaps on
 ## Borders
-default_border pixel 2
+default_border pixel 4
 smart_borders on
 ## Blur
 blur enable
-blur_xray enable
 blur_passes 1
 blur_radius 3
-blur_noise 0
-blur_brightness 0.75
-blur_contrast 0.5
-blur_saturation 2
 ## Shadows
 shadows enable
 shadow_blur_radius 20
