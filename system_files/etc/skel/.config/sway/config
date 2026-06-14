@@ -81,6 +81,7 @@ bindsym $mod+r mode "resize"
 # Look and Feel
 ## gaps
 gaps inner 2
+gaps outer 2
 smart_gaps on
 ## Borders
 default_border pixel 4
