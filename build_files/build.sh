@@ -22,7 +22,8 @@ dnf5 -y install tmux                     \
                 wlsunset                 \
                 cargo                    \
                 tldr                     \
-                fzf
+                fzf                      \
+                ripgrep
 
 # Install Dank Material Shell
 dnf5 -y copr enable avengemedia/dms
