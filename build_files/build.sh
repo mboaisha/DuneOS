@@ -9,7 +9,6 @@ dnf5 -y install tmux                     \
                 neovim                   \
                 curl                     \
                 wget                     \
-                fuzzel                   \
                 fastfetch                \
                 chezmoi                  \
                 neo                      \
