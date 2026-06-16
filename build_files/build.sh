@@ -62,7 +62,7 @@ dnf5 -y install ubuntumono-nerd-fonts      \
 # Yeet sway and replace it with Swayfx
 # Note: You might have stuttering issues if you use this in a virtual machine
 # Requires Terra repo
-dnf5 swap -y sway swayfx --allowerasing --setopt=protected_packages=
+#dnf5 swap -y sway swayfx --allowerasing --setopt=protected_packages=
 
 # Bitwarden CLI
 # Requires Terra repo
