@@ -12,7 +12,7 @@ set $fm nemo
 ## session stuff
 exec /usr/libexec/sway-systemd/session.sh
 ## Dank Material Shell
-exec dms run
+#exec dms run
 
 # Binds
 ## Bring up the launcher
