@@ -24,19 +24,24 @@ dnf5 -y install tmux                     \
                 fzf                      \
                 ripgrep
 
+# Package group to install virtualization goodies such as virt-manager
+dnf5 install -y @virtualization
+
 # Install Dank Material Shell
 dnf5 -y copr enable avengemedia/dms
 dnf5 -y install dms
 dnf5 -y install dms-greeter
 dnf5 -y copr disable avengemedia/dms
 
-# Package group to install virtualization goodies such as virt-manager
-dnf5 install -y @virtualization
-
 # Add my personal COPR and install lavat
 dnf5 -y copr enable mboaisha/assortment
 dnf5 -y install lavat
 dnf5 -y copr disable mboaisha/assortment
+
+# Install Starship prompt
+dnf5 -y copr enable atim/starship
+dnf5 -y install starship
+dnf5 -y copr disable atim/starship
 
 # Add Terra repo
 dnf5 install -y --nogpgcheck --repofrompath 'terra,https://repos.fyralabs.com/terra$releasever' terra-release
