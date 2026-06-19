@@ -90,6 +90,5 @@ systemctl enable sshd.service
 systemctl enable tailscaled.service
 systemctl disable sddm
 systemctl enable greetd
-systemctl enable dms
 
 dnf5 clean all
