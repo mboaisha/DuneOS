@@ -76,7 +76,7 @@ dnf5 -y install bitwarden-cli
 # Install VSCodium
 # Note: .repo is already defined in the image
 dnf5 install -y codium
-
+# Note: .repo is already defined in the image
 dnf5 install -y tailscale
 
 # Add flathub
