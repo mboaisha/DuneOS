@@ -62,7 +62,9 @@ dnf5 -y install ubuntumono-nerd-fonts      \
                 zedmono-nerd-fonts         \
                 sourcecodepro-nerd-fonts   \
                 terminus-nerd-fonts        \
-                bigblueterminal-nerd-fonts
+                bigblueterminal-nerd-fonts \
+                firamono-nerd-fonts        \
+                firacode-nerd-fonts
 
 # Yeet sway and replace it with Swayfx
 # Note: You might have stuttering issues if you use this in a virtual machine
