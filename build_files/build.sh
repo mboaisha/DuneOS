@@ -27,11 +27,10 @@ dnf5 -y install tmux                     \
 # Package group to install virtualization goodies such as virt-manager
 dnf5 install -y @virtualization
 
-# Install Dank Material Shell (and friends)
+# Install Dank Material Shell
 dnf5 -y copr enable avengemedia/dms
 dnf5 -y install dms
 dnf5 -y install dms-greeter
-dnf5 -y install dankcalendar-git
 dnf5 -y copr disable avengemedia/dms
 
 # Add my personal COPR and install lavat
