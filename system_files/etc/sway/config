@@ -86,10 +86,10 @@ smart_gaps on
 default_border pixel 4
 smart_borders on
 ## Blur
-blur enable
-blur_passes 1
-blur_radius 3
+#blur enable
+#blur_passes 1
+#blur_radius 3
 ## Shadows
-shadows enable
-shadow_blur_radius 20
-shadow_color #00000080
+#shadows enable
+#shadow_blur_radius 20
+#shadow_color #00000080
