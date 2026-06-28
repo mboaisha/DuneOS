@@ -3,8 +3,8 @@ FROM scratch AS ctx
 COPY build_files /
 
 # Base Image
-FROM quay.io/fedora-ostree-desktops/sway-atomic:44
-
+#FROM quay.io/fedora-ostree-desktops/sway-atomic:44
+FROM ghcr.io/wayblueorg/sway:latest
 # Install brew
 COPY --from=ghcr.io/ublue-os/brew:latest /system_files /
 RUN --mount=type=cache,dst=/var/cache \
