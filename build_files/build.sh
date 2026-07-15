@@ -22,8 +22,8 @@ dnf5 -y install tmux                     \
                 cargo                    \
                 tldr                     \
                 fzf                      \
-                ripgrep
-
+                ripgrep                  \
+                emacs
 # Package group to install virtualization goodies such as virt-manager
 dnf5 install -y @virtualization
 
