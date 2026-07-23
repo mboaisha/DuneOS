@@ -23,7 +23,8 @@ dnf5 -y install tmux                     \
                 tldr                     \
                 fzf                      \
                 ripgrep                  \
-                emacs
+                emacs                    \
+                wireguard-tools
 # Package group to install virtualization goodies such as virt-manager
 dnf5 install -y @virtualization
 
